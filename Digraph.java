@@ -14,6 +14,8 @@ public class Digraph
         for (int v = 0; v < V; v++)
             adj[v] = new Bag<Integer>();
     }
+    public int V()
+    {   return V;   }
     // add an edge v-w
     void addEdge(int v, int w)
     {   adj[v].add(w);  }
